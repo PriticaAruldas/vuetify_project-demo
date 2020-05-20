@@ -51,7 +51,27 @@
       </v-card>
     </v-dialog>
 
-    <v-card class="mx-auto" max-width="344" tile style="margin-top:20px">
+    <v-list >
+      <v-row>
+        <v-col v-for="c in classes" :key="c.subject">
+      <v-card class="mx-auto" max-width="344" tile style="margin-top:20px">
+          <v-toolbar color>
+            <v-toolbar-title><h2 class="sub_title" style="text-align:center">{{ c.class_name }}</h2></v-toolbar-title>
+          </v-toolbar>
+          <v-card-text style="background-color:#B388FF">
+            <h2>Class Name: {{ c.class_name }}</h2>
+            <h2>Section: {{ c.section }}</h2>
+            <h2>Subject: {{ c.subject }}</h2>
+          </v-card-text>
+          <v-card-actions>
+            <v-btn fab x-small dark color="red" @click="removeclass(i)"><v-icon>mdi-delete</v-icon></v-btn>
+            <v-btn fab x-small dark color="blue"><v-icon>mdi-share</v-icon></v-btn>
+          </v-card-actions>
+      </v-card>
+      </v-col>
+      </v-row>
+    </v-list>
+    <!-- <v-card class="mx-auto" max-width="344" tile style="margin-top:20px">
       <v-toolbar color>
         <v-toolbar-title>Mathematics-Grade-4</v-toolbar-title>
       </v-toolbar>
@@ -67,7 +87,7 @@
      <v-btn fab x-small dark color="red"><v-icon>mdi-delete</v-icon></v-btn>
      <v-btn fab x-small dark color="blue"><v-icon>mdi-share</v-icon></v-btn>
     </v-card-actions>
-  </v-card>
+  </v-card> -->
     </div>
 </template>
 
@@ -92,6 +112,9 @@ export default {
       this.class_name = ''
       this.section = ''
       this.subject = ''
+    },
+    removeclass (index) {
+      this.classes.splice(index, 1)
     }
   }
 }
