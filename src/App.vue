@@ -45,15 +45,12 @@
             </v-list-item-icon>
             <v-list-item-title>Register</v-list-item-title>
           </v-list-item>
-          <v-list-item to="/dashboard">
-            <v-list-item-icon>
-              <v-icon>mdi-login</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Dashboard</v-list-item-title>
+          <v-list-item to="/udashboard">
+            <v-list-item-title>User Profile Dashboard</v-list-item-title>
           </v-list-item>
 
-          <v-list-item to="/screen">
-            <v-list-item-title>screen</v-list-item-title>
+          <v-list-item to="/dashboard">
+            <v-list-item-title>Dashboard</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-navigation-drawer>

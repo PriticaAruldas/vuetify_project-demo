@@ -1,27 +1,10 @@
 <template>
     <v-app>
-       <!-- <v-col cols="12" sm="12" md="6">
-        <v-card raised>
-          <v-toolbar color="cyan darken-4">
-            <template v-slot:extension>
-              <v-row justify="center">
-               <v-avatar size="150">
-                    <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
-                </v-avatar>
-              </v-row>
-            </template>
-          </v-toolbar>
-
-          <v-card-text style="margin-top:55px" class="grey lighten-5">
-               <div v-for="post in posts" :key="post.id" class="single-blog" style="text-align:center">
-                    <h1><strong>Name : {{post.name}}</strong></h1>
-                    <h2>city : {{post.address.city}}</h2>
-                    <h3>Contact Number : {{post.phone}}</h3>
-                    <h3>Website : {{post.website}}</h3>
-                </div>
-          </v-card-text>
-        </v-card>
-      </v-col> -->
+       <v-row style="margin-left:5px; margin-top:5px">
+     <v-btn fab small color="purple darken-4" to="/udashboard">
+     <v-icon>mdi-arrow-left</v-icon>
+    </v-btn>
+   </v-row>
       <v-card class="mx-auto" max-width="400">
         <v-img src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" height="230px">
           <v-row justify="center" style="margin-top:15px">

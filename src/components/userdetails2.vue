@@ -2,6 +2,12 @@
     <v-app>
         <div>
             User Profile
+             <v-row style="margin-left:5px; margin-top:5px">
+     <v-btn fab small color="purple darken-4" to="/udashboard">
+     <v-icon>mdi-arrow-left</v-icon>
+    </v-btn>
+   </v-row>
+
             <v-card class="mx-auto" max-width="700px" raised>
                 <v-row>
                     <v-col col-6>

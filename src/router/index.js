@@ -7,8 +7,8 @@ import Register from '@/components/Registration.vue'
 import userdetails from '@/components/userDetails.vue'
 import userdetails1 from '@/components/user-details1.vue'
 import userdetails2 from '@/components/userdetails2.vue'
-import Dashboard from '@/components/Dashboard.vue'
-import screen from '@/components/screen.vue'
+import userDashboard from '@/components/UserProfileDashboard.vue'
+import dashboard from '@/components/Dashboard.vue'
 
 Vue.use(Router)
 
@@ -35,9 +35,9 @@ export default new Router({
       component: About
     },
     {
-      path: '/dashboard',
-      name: 'Dashboard',
-      component: Dashboard
+      path: '/udashboard',
+      name: 'userDashboard',
+      component: userDashboard
     },
     {
       path: '/userdetails',
@@ -55,9 +55,9 @@ export default new Router({
       component: userdetails2
     },
     {
-      path: '/screen',
-      name: 'screen',
-      component: screen
+      path: '/dashboard',
+      name: 'dashboard',
+      component: dashboard
     }
   ]
 })
